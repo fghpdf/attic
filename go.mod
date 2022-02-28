@@ -1,3 +1,3 @@
-module fghpdf.me/attic
+module github.com/fghpdf/attic
 
 go 1.13
