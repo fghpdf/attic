@@ -1,6 +1,6 @@
 package attic
 
-func minInt8(a, b int8) int9 {
+func minInt8(a, b int8) int8 {
     if a < b {
         return a
     }
