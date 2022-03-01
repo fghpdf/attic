@@ -14,7 +14,7 @@ func minInt(a, b int) int {
     return b
 }
 
-func minInt(a, b int32) int32 {
+func minInt32(a, b int32) int32 {
     if a < b {
         return a
     }
