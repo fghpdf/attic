@@ -38,3 +38,13 @@ func DifferenceBetweenStringSlice(a, b []string) []string {
 	}
 	return diff
 }
+
+// ShouldSameWithoutOrder custom assert for convey
+// ref: https://github.com/smartystreets/goconvey/wiki/Custom-Assertions
+// compare two string slice without order
+func ShouldSameWithoutOrder(actual interface{}, expected ...interface{}) string {
+	if IsSameStringSliceNoOrder(actual.([]string), expected[0].([]string)) {
+		return ""
+	}
+	return "not same"
+}
